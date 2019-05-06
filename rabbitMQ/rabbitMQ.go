@@ -54,7 +54,8 @@ func StartRabbit(callback callback) {
 			log.Fatal(err)
 			break
 		case d := <-msgs:
-			log.Println(d.Body)
+			log.Println("Received message ", string(d.Body))
+			callback(string(d.Body))
 		}
 	}
 }
