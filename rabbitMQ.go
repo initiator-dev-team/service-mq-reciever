@@ -1,4 +1,4 @@
-package rabbitMQ
+package mqReciever
 
 import (
 	"github.com/streadway/amqp"
